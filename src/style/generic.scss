@@ -18,9 +18,12 @@ body a{
     width: 70%;
     margin: 0 auto;
 } 
+.background-gradient{
+    background: linear-gradient(to right, #060607, #060607 35%, rgba(0, 0, 0, 0.1) 100%);
+}
 /* #endregion Container */
 
-/* #region Container */
+/* #region Button */
 .btn{
     background-color: #4154FF;
     border: none;
@@ -30,7 +33,25 @@ body a{
     font-weight: bold;
     cursor: pointer;
 }
-/* #endregion Container */
+.play{
+    color: #4154FF;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.square-white{
+    background-color: #FFFFFF;
+    color: #7f8c98;
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+}
+/* #endregion Button */
 
 /* #region Row */
 /* [class*="col-"] {
