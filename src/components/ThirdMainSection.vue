@@ -1,6 +1,32 @@
 <script>
     export default{
         name: 'ThirdMainSection',
+        data(){
+            return{
+                playlist: [
+                    {
+                        image: 'video2-2x.jpg',
+                        title: 'Thighs & glute workout',
+                        subTitle: 'Increase your mobility',
+                    },
+                    {
+                        image: 'video7-2x.jpg',
+                        title: 'Lift, firm & perk up',
+                        subTitle: 'Feel young again',
+                    },
+                    {
+                        image: 'video9-2x.jpg',
+                        title: 'Slim & trim your waist',
+                        subTitle: 'Shed those extra pounds',
+                    },
+                ]
+            }
+        },
+        methods: {
+            getImageUrl(name) {
+                return new URL(`../assets/img/${name}`, import.meta.url).href;
+            }
+        },
     }
 </script>
 
@@ -38,14 +64,23 @@
                 </button>
             </div>
         </div>
-        <div class="container">
-            <h4>FeaturedPlaylists</h4>
-            <div class="video-box">
-                <button class="play"></button>
+        <div class="container anchor">
+            <h3>FeaturedPlaylists</h3>
+            <div class="video-wrapper d-flex jst-btwn">
+                <div v-for="video in playlist"  class="single-video-box">
+                    <div class="video-box anchor">
+                        <img :src="getImageUrl(video.image)" alt="video playlist">
+                        <button class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <h3>{{ video.title }}</h3>
+                    <h4>{{ video.subTitle }}</h4>
+                </div>
+                <a class="d-flex algn-cntr" href="#">View all videos
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
             </div>
-            <a href="#">View all videos
-                [chevron]
-            </a>
         </div>
     </div>
 </template>
@@ -146,6 +181,58 @@
                         margin-right: 10px;
                     }
                 }
+            }
+        }
+    }
+    .container{
+        h3{
+            font-size: 25px;
+            margin-top: 60px;
+            font-weight: 500;
+        }
+        .video-wrapper{
+            margin-top: 40px;
+            .single-video-box{
+                width: calc((100% / 3) - 40px);
+                text-align: center;
+                .video-box{
+                border-radius: 5px;
+                border-bottom-right-radius: 25px;
+                overflow: hidden;
+                height: 340px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                    button{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50% , -50%);
+                    }
+                }
+                h3{
+                    margin-top: 15px;
+                    font-size: 25px;
+                }
+                h4{
+                    color: $palette-blue;
+                    margin-top: 15px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+        a{
+            position: absolute;
+            top: 50px;
+            right: 40px;
+            color: black;
+            font-weight: 400;
+            font-size: 18px;
+            gap: 20px;
+            i{
+                font-size: 14px;
             }
         }
     }
