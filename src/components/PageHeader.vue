@@ -80,15 +80,6 @@ header{
             .header-btn-wrapper{
                 gap: 50px;
                 margin-left: 40px;
-                .btn{
-                    background-color: $palette-blue;
-                    border: none;
-                    border-radius: 20px;
-                    color: $palette-white;
-                    padding: 15px 35px;
-                    font-weight: bold;
-                    cursor: pointer;
-                }
                 .btn-no-style{
                     background-color: transparent;
                     border: none;

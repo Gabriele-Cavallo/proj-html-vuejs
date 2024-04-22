@@ -1,17 +1,20 @@
 <script>
+    import FirstMainSection from './FirstMainSection.vue';
     export default{
         name: 'PageMain',
-
+        components: {
+            FirstMainSection,
+        },
         data(){
             return{
 
             }
-        }
+        },
     }
 </script>
 
 <template>
-    <h1>ciao sono PageMain</h1>
+    <FirstMainSection></FirstMainSection>
 </template>
 
 <style scoped lang="scss">
