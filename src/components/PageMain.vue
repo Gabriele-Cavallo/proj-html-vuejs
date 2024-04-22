@@ -1,9 +1,12 @@
 <script>
     import FirstMainSection from './FirstMainSection.vue';
+    import SecondMainSection from './SecondMainSection.vue';
+
     export default{
         name: 'PageMain',
         components: {
             FirstMainSection,
+            SecondMainSection,
         },
         data(){
             return{
@@ -15,6 +18,7 @@
 
 <template>
     <FirstMainSection></FirstMainSection>
+    <SecondMainSection></SecondMainSection>
 </template>
 
 <style scoped lang="scss">
