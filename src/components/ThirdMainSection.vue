@@ -31,7 +31,8 @@
 </script>
 
 <template>
-    <div class="row">
+    <section>
+        <div class="row">
         <div class="col-50 service">
             <div class="img-wrapper anchor">
                 <img src="../assets/img/service15-2x.jpg" alt="service">
@@ -82,12 +83,16 @@
                 </a>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
     @use '../style/partials/variables' as *;
 
+section{
+    padding-bottom: 200px;
+}
 .row{
     .col-50{
         width: 50%;
@@ -96,7 +101,7 @@
                 height: 870px;  
                 position: relative;
                 bottom: 50px;
-                width: 940px;
+                max-width: 940px;
                 border-bottom-right-radius: 35px;
                 overflow: hidden;
                 &::after{
