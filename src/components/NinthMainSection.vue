@@ -33,7 +33,7 @@ section{
     min-height: 900px;
     .background-gradient-blue-red{
         min-height: 900px;
-        background: linear-gradient(135deg, rgba(0, 0, 255, 0.4) 40%, rgba(255, 0, 0, 0.4));
+        background: linear-gradient(135deg, rgba(0, 0, 255, 0.35) 40%, rgba(255, 0, 0, 0.35));
         .container{
             min-height: 900px;
             width: 50%;
