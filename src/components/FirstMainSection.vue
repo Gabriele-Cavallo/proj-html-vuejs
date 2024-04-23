@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="right-col d-flex jst-cntr algn-cntr">
-                    <button class=" play">
+                    <button class="play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                     <div class="anchor-btn d-flex flex-col">
@@ -100,6 +100,13 @@ section{
             }
             .right-col{
                 width: 50%;
+                .play{
+                    height: 120px;
+                    width: 120px;
+                    i{
+                        font-size: 30px;
+                    }
+                }
                 .anchor-btn{
                     position: absolute;
                     right: 20px;

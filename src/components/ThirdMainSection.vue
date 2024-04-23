@@ -136,6 +136,7 @@ section{
             }
             h2{
                 font-size: 65px;
+                width: 70%;
             }
             .youtube-wrapper{
                 .grey{

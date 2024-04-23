@@ -63,7 +63,7 @@ section{
                 border: 3px solid #3240c1;
                 text-align: center;
                 color: $palette-white;
-                padding: 100px 30px;
+                padding: 100px 40px;
                 transition: all 1s ease;
                 border-radius: 10px;
                 h3{

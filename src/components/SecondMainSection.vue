@@ -62,16 +62,18 @@
 section{
     background: linear-gradient(135deg, blue, red );
     min-height: 900px;
+    padding-bottom: 100px;
     .container{
         .box-wrapper{
             position: relative;
             bottom: 80px;
             .box{
-               height: 440px;
-               width: calc((100% / 3) - 120px);
+               height: 560px;
+               width: calc((100% / 3) - 80px);
                border-radius: 5px;
                border-bottom-right-radius: 50px;
                overflow: hidden;
+               margin-bottom: 100px;
                &::after{
                 content: '';
                 position: absolute;
