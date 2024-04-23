@@ -38,7 +38,9 @@
 <template>
     <section>
         <div class="container">
+            <!-- Courses wrapper -->
             <div class="card-wrapper d-flex jst-btwn">
+                <!-- Single course card template  -->
                 <div v-for="service in services" class="card d-flex flex-col algn-cntr">
                     <img :src="getImageUrl(service.img)" alt="service">
                     <i class="fa-solid fa-water"></i>
@@ -48,7 +50,9 @@
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
+                <!-- /Single course card template  -->
             </div>
+            <!-- /Courses wrapper -->
         </div>
     </section>
 </template>

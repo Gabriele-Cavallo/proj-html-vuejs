@@ -35,6 +35,7 @@
     <section>
         <div class="container">
             <div class="card-wrapper d-flex jst-btwn">
+                <!-- Single card template -->
                 <div v-for="card in cards" class="card">
                     <i :class="card.icon"></i>
                     <h3>{{ card.title }}</h3>
@@ -47,6 +48,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- /Single card template -->
             </div>
         </div>
     </section>

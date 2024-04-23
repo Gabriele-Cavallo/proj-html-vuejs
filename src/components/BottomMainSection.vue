@@ -14,10 +14,12 @@
                 <h2>Crossfit workout of the day</h2>
                 <h3>November 15th, 2019</h3>
                 <button class="btn-wrapper">
+                    <!-- Video gallery link -->
                     <a href="#" class="d-flex jst-cntr algn-cntr">
                         <div>View all videos</div>
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
+                    <!-- /Video gallery link -->
                 </button>
             </div>
         </div>

@@ -14,6 +14,7 @@
     <section class="anchor" id="home">
         <div class="background-gradient">
             <div class="container d-flex algn-cntr">
+                <!-- Left column -->
                 <div class="left-col">
                     <h4>Certified fitness professional</h4>
                     <h2>Take control of your health</h2>
@@ -30,6 +31,9 @@
                         </button>
                     </div>
                 </div>
+                <!-- /Left column -->
+
+                <!-- Right column -->
                 <div class="right-col d-flex jst-cntr algn-cntr">
                     <button class="play">
                         <i class="fa-solid fa-play"></i>
@@ -49,6 +53,7 @@
                         </button>
                     </div>
                 </div>
+                <!-- /Right column -->
             </div>
         </div>
     </section>

@@ -16,6 +16,7 @@
 
 <template>
     <footer>
+        <!-- Footer link/contacs/socials -->
         <div class="container">
             <div class="row">
                 <div class="col-33">
@@ -46,6 +47,9 @@
                 </div>
             </div>
         </div>
+        <!-- /Footer link/contacs/socials -->
+
+        <!-- Footer copyright -->
         <div class="footer-container">
             <div class="copyright d-flex jst-cntr algn-cntr">
                 <i></i>
@@ -55,6 +59,7 @@
                 <a href="#">WordPress</a>
             </div>
         </div>
+        <!-- /Footer copyright -->
     </footer>
 </template>
 

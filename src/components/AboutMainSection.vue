@@ -12,10 +12,12 @@
                     <h4>Join our mailing list today</h4>
                     <h2>Insider offers & flash sales in your inbox every week.</h2>
                     <i class="fa-solid fa-water"></i>
+                    <!-- User input email -->
                     <div class="input-wrapper">
                         <input type="text" placeholder="Insert your email...">
                         <button class="btn">Subscribe</button>
                     </div>
+                    <!-- /User input email -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore earum dolorum rem odio harum quidem doloribus facere, pariatur at aliquid incidunt minima? Sed commodi explicabo aperiam eaque repudiandae in.</p>
                 </div>
             </div>

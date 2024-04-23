@@ -34,7 +34,9 @@
     <section id="blog">
         <div class="container anchor">
             <h3>Latest articles</h3>
+            <!-- Blogs wrapper -->
             <div class="blog-wrapper d-flex jst-btwn">
+                <!-- Single blog box template -->
                 <div v-for="video in playlist"  class="single-blog-box">
                     <div class="img-gradient anchor">
                         <img :src="getImageUrl(video.image)" alt="video playlist">
@@ -42,10 +44,12 @@
                     <h3>{{ video.title }}</h3>
                     <small>{{ video.subTitle }}</small>
                 </div>
+                <!-- /Single blog box template -->
                 <a class="d-flex algn-cntr" href="#">Read all articles
                     <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
+            <!-- /Blogs wrapper -->
         </div>
     </section>
 </template>

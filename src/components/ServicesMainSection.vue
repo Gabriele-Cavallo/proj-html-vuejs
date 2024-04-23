@@ -33,7 +33,9 @@
 <template>
     <section id="services">
         <div class="container">
+            <!-- Box services wrapper -->
             <div class="box-wrapper d-flex jst-btwn">
+                <!-- Single box template -->
                 <div v-for="service in services" class="box anchor d-flex pointer">
                     <img :src="getImageUrl(service.image)" :alt="service.title">
                     <div class="box-title">
@@ -42,7 +44,11 @@
                         <h4>{{  service.subTitle  }}</h4>
                     </div>
                 </div>
+                <!-- /Single box template -->
             </div>
+            <!-- /Box services wrapper -->
+
+            <!-- Testimonial box -->
             <div class="sub-container">
                 <h2>"How you respond to the challenge in the second half will determine what you become after the game, wheter you are a winner or a loser."</h2>
                 <i class="fa-solid fa-water"></i>
@@ -52,6 +58,7 @@
                     <span>Las Vegas</span>
                 </div>
             </div>
+            <!-- /Testimonial box -->
         </div>
     </section>
 
