@@ -74,6 +74,10 @@ section{
                border-bottom-right-radius: 50px;
                overflow: hidden;
                margin-bottom: 100px;
+               transition: all 1s ease;
+               &:hover{
+                transform: scale(1.1);
+               }
                &::after{
                 content: '';
                 position: absolute;

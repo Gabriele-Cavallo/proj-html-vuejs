@@ -36,7 +36,9 @@
             <h3>Latest articles</h3>
             <div class="blog-wrapper d-flex jst-btwn">
                 <div v-for="video in playlist"  class="single-blog-box">
-                    <img :src="getImageUrl(video.image)" alt="video playlist">
+                    <div class="img-gradient anchor">
+                        <img :src="getImageUrl(video.image)" alt="video playlist">
+                    </div>
                     <h3>{{ video.title }}</h3>
                     <small>{{ video.subTitle }}</small>
                 </div>
@@ -62,11 +64,22 @@ section{
             margin-top: 40px;
             .single-blog-box{
                 width: calc((100% / 3) - 40px);
+                cursor: pointer;
+                &:hover .img-gradient{
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(to top, rgba(0, 8, 255, 0.3)5%, rgba(0, 8, 255, 0)100%);
+                    }
+                }
                 img{
                     height: 340px;
                     width: 100%;
-                    cursor: pointer;
-                    
+                    display: block;
                 }
                 h3{
                     margin-top: 20px;
