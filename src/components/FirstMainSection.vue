@@ -61,8 +61,9 @@ section{
     color: $palette-white;
     min-height: 900px;
     background-image: url('../assets/img/slider82x-scaled.jpg');
-    object-fit: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
     .background-gradient{
         .container {
             min-height: 900px;
