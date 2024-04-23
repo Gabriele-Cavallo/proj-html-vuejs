@@ -2,10 +2,12 @@
     import { store } from '../store.js'
     export default{
         name: 'PageHeader',
+        props:{
+            headerLinks: Array
+        },
         data(){
             return{
                 store,
-                headerLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Store']
             }
         }
     }

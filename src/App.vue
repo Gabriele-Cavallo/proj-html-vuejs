@@ -13,13 +13,14 @@
         data (){
             return{
                 store,
+                headerLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Store']
             }
         },
     }
 </script>
 
 <template>
-    <PageHeader></PageHeader>
+    <PageHeader :headerLinks="headerLinks"></PageHeader>
     <main>
     <PageMain></PageMain>
     </main>
