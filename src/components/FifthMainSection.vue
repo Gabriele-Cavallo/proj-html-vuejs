@@ -40,9 +40,11 @@
                     <h3>{{ card.title }}</h3>
                     <h4>{{ card.subTitle }}</h4>
                     <p>{{ card.paragraph }}</p>
-                    <div class="button-wrapper d-flex algn-cntr jst-cntr">
-                        <button>{{ card.button }}</button>
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="button-wrapper">
+                        <a href="#" class="d-flex algn-cntr jst-cntr">
+                            <button>{{ card.button }}</button>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -87,17 +89,20 @@ section{
                     }
                 }
                 .button-wrapper{
-                    gap: 15px;
-                    button{
-                        font-size: 20px;
-                        background: transparent;
-                        border: none;
-                        font-weight: bold;
+                    a{
+                        gap: 15px;
                         color: $palette-white;
-                    }
-                    i{
-                        font-size: 16px;
-                        font-weight: 900;
+                        button{
+                            font-size: 20px;
+                            background: transparent;
+                            border: none;
+                            font-weight: bold;
+                            color: $palette-white;
+                        }
+                        i{
+                            font-size: 16px;
+                            font-weight: 900;
+                        }
                     }
                 }
                 &:hover{

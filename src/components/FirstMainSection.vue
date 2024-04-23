@@ -35,11 +35,11 @@
                         <i class="fa-solid fa-play"></i>
                     </button>
                     <div class="anchor-btn d-flex flex-col">
-                        <button class="square-white d-flex flex-col algn-cntr jst-cntr">
+                        <button class="square-white d-flex flex-col algn-cntr jst-cntr pointer">
                             <i class="fa-solid fa-folder"></i>
                             <span>Demos</span>
                         </button>
-                        <button class="square-white d-flex flex-col algn-cntr jst-cntr">
+                        <button class="square-white d-flex flex-col algn-cntr jst-cntr pointer">
                             <div>
                                 <div class="price anchor">39
                                     <span>$</span>

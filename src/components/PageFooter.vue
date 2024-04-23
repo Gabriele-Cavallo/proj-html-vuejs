@@ -22,7 +22,9 @@
                     <img class="footer-logo" src="../assets/img/logo-2x.png" alt="logo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, provident? Nemo dolore impedit nostrum animi soluta itaque at beatae, sequi molestiae cupiditate eaque fugit, corrupti minus id sint ipsa labore.</p>
                     <div class="social-wrapper">
-                        <i v-for="social in footerInfo.socialLinks" :class="social.social"></i>
+                        <a  v-for="social in footerInfo.socialLinks" href="#">
+                            <i :class="social.social"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-33">

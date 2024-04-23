@@ -34,7 +34,7 @@
     <section>
         <div class="container">
             <div class="box-wrapper d-flex jst-btwn">
-                <div v-for="service in services" class="box anchor d-flex">
+                <div v-for="service in services" class="box anchor d-flex pointer">
                     <img :src="getImageUrl(service.image)" :alt="service.title">
                     <div class="box-title">
                         <i class="fa-solid fa-water"></i>

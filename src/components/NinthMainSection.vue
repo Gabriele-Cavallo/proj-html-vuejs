@@ -13,9 +13,11 @@
                 </button>
                 <h2>Crossfit workout of the day</h2>
                 <h3>November 15th, 2019</h3>
-                <button class="btn-wrapper d-flex jst-cntr algn-cntr">
-                    <div>View all videos</div>
-                    <i class="fa-solid fa-arrow-right-long"></i>
+                <button class="btn-wrapper">
+                    <a href="#" class="d-flex jst-cntr algn-cntr">
+                        <div>View all videos</div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
                 </button>
             </div>
         </div>
@@ -56,9 +58,11 @@ section{
                     min-width: 200px;
                     background-color: transparent;
                     border: none;
-                    color: $palette-white;
-                    gap: 15px;
                     font-size: 25px;
+                    a{
+                        gap: 15px;
+                        color: $palette-white;
+                    }
                     i{
                         font-size: 20px;
                     }
