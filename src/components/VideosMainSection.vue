@@ -218,7 +218,7 @@ section{
                 border-radius: 5px;
                 border-bottom-right-radius: 25px;
                 overflow: hidden;
-                height: 340px;
+                max-height: 340px;
                     img{
                         height: 100%;
                         width: 100%;

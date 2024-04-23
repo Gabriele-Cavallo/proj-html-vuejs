@@ -63,7 +63,7 @@ section{
         .card-wrapper{
             .card{
                 font-size: 20px;
-                width: calc((100% / 3) - 80px);
+                width: calc((100% / 3) - 40px);
                 border: 3px solid #3240c1;
                 text-align: center;
                 color: $palette-white;

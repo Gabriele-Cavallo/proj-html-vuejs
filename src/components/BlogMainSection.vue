@@ -81,7 +81,7 @@ section{
                     }
                 }
                 img{
-                    height: 340px;
+                    max-height: 340px;
                     width: 100%;
                     display: block;
                 }

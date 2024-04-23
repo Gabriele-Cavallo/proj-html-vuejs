@@ -30,6 +30,7 @@ section{
     background-size: cover;
     min-height: 900px;
     color: $palette-white;
+    text-align: center;
     .background-gradient-bottom{
         background: linear-gradient(to top, #060607, rgba(0, 0, 0, 0.1) 100%);
         min-height: 900px;
