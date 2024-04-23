@@ -36,8 +36,10 @@
             <!-- Left column -->
             <div class="col-50 service">
                 <div class="img-wrapper anchor">
-                    <img src="../assets/img/service15-2x.jpg" alt="service">
-                    <button class="play">
+                    <div class="img-wrapper-gradient">
+                        <img src="../assets/img/service15-2x.jpg" alt="service">
+                    </div>
+                    <button class="play pointer">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -116,14 +118,16 @@ section{
                 max-width: 940px;
                 border-bottom-right-radius: 35px;
                 overflow: hidden;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background-color: rgba(0, 0, 0, 0.2);
+                .img-wrapper-gradient{
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.2);
+                    }
                 }
                 img{
                     height: 100%;

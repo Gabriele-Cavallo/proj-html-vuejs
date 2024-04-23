@@ -43,7 +43,7 @@
                     <p>{{ card.paragraph }}</p>
                     <div class="button-wrapper">
                         <a href="#" class="d-flex algn-cntr jst-cntr">
-                            <button>{{ card.button }}</button>
+                            <button class="pointer">{{ card.button }}</button>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
