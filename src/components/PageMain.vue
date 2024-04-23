@@ -7,6 +7,7 @@
     import SixthMainSection from './SixthMainSection.vue';
     import SeventhMainSection from './SeventhMainSection.vue';
     import EighthMainSection from './EighthMainSection.vue';
+    import NinthMainSection from './NinthMainSection.vue';
 
     export default{
         name: 'PageMain',
@@ -19,6 +20,7 @@
             SixthMainSection,
             SeventhMainSection,
             EighthMainSection,
+            NinthMainSection,
         },
         data(){
             return{
@@ -37,6 +39,7 @@
     <SixthMainSection></SixthMainSection>
     <SeventhMainSection></SeventhMainSection>
     <EighthMainSection></EighthMainSection>
+    <NinthMainSection></NinthMainSection>
 </template>
 
 <style scoped lang="scss">
