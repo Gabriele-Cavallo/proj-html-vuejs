@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'SecondMainSection',
+        name: 'ServicesMainSection',
         data (){
             return{
                 services: [
@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="services">
         <div class="container">
             <div class="box-wrapper d-flex jst-btwn">
                 <div v-for="service in services" class="box anchor d-flex pointer">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="sub-container">
-                <h2>"How you respond to the challenge in the second half will determine what you become after the game, wheter you are a wiiner or a loser."</h2>
+                <h2>"How you respond to the challenge in the second half will determine what you become after the game, wheter you are a winner or a loser."</h2>
                 <i class="fa-solid fa-water"></i>
                 <div class="testimonials d-flex jst-cntr algn-cntr">
                     <img src="../assets/img/avatar-1-2x.jpg" alt="avatar">
@@ -68,8 +68,8 @@ section{
             position: relative;
             bottom: 80px;
             .box{
-               height: 560px;
-               width: calc((100% / 3) - 80px);
+               max-height: 560px;
+               width: calc((100% / 3) - 40px);
                border-radius: 5px;
                border-bottom-right-radius: 50px;
                overflow: hidden;

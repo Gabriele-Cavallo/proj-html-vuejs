@@ -1,26 +1,26 @@
 <script>
-    import FirstMainSection from './FirstMainSection.vue';
-    import SecondMainSection from './SecondMainSection.vue';
-    import ThirdMainSection from './ThirdMainSection.vue';
-    import FourthMainSection from './FourthMainSection.vue';
-    import FifthMainSection from './FifthMainSection.vue';
-    import SixthMainSection from './SixthMainSection.vue';
-    import SeventhMainSection from './SeventhMainSection.vue';
-    import EighthMainSection from './EighthMainSection.vue';
-    import NinthMainSection from './NinthMainSection.vue';
+    import HomeMainSection from './HomeMainSection.vue';
+    import ServicesMainSection from './ServicesMainSection.vue';
+    import VideosMainSection from './VideosMainSection.vue';
+    import AboutMainSection from './AboutMainSection.vue';
+    import SubAboutMainSection from './SubAboutMainSection.vue';
+    import BlogMainSection from './BlogMainSection.vue';
+    import StoreMainSection from './StoreMainSection.vue';
+    import SubStoreMainSection from './SubStoreMainSection.vue';
+    import BottomMainSection from './BottomMainSection.vue';
 
     export default{
         name: 'PageMain',
         components: {
-            FirstMainSection,
-            SecondMainSection,
-            ThirdMainSection,
-            FourthMainSection,
-            FifthMainSection,
-            SixthMainSection,
-            SeventhMainSection,
-            EighthMainSection,
-            NinthMainSection,
+            HomeMainSection,
+            ServicesMainSection,
+            VideosMainSection,
+            AboutMainSection,
+            SubAboutMainSection,
+            BlogMainSection,
+            StoreMainSection,
+            SubStoreMainSection,
+            BottomMainSection,
         },
         data(){
             return{
@@ -31,15 +31,15 @@
 </script>
 
 <template>
-    <FirstMainSection></FirstMainSection>
-    <SecondMainSection></SecondMainSection>
-    <ThirdMainSection></ThirdMainSection>
-    <FourthMainSection></FourthMainSection>
-    <FifthMainSection></FifthMainSection>
-    <SixthMainSection></SixthMainSection>
-    <SeventhMainSection></SeventhMainSection>
-    <EighthMainSection></EighthMainSection>
-    <NinthMainSection></NinthMainSection>
+    <HomeMainSection></HomeMainSection>
+    <ServicesMainSection></ServicesMainSection>
+    <VideosMainSection></VideosMainSection>
+    <AboutMainSection></AboutMainSection>
+    <SubAboutMainSection></SubAboutMainSection>
+    <BlogMainSection></BlogMainSection>
+    <StoreMainSection></StoreMainSection>
+    <SubStoreMainSection></SubStoreMainSection>
+    <BottomMainSection></BottomMainSection>
 </template>
 
 <style scoped lang="scss">

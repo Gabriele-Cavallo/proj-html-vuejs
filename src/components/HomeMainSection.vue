@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'FirstMainSection',
+        name: 'HomeMainSection',
 
         data(){
             return{
@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <section class="anchor">
+    <section class="anchor" id="home">
         <div class="background-gradient">
             <div class="container d-flex algn-cntr">
                 <div class="left-col">
@@ -103,6 +103,8 @@ section{
                 .play{
                     height: 120px;
                     width: 120px;
+                    position: relative;
+                    left: 25%;
                     i{
                         font-size: 30px;
                     }

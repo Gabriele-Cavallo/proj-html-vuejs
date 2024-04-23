@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'SixthMainSection',
+        name: 'BlogMainSection',
         data(){
             return{
                 playlist: [
@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="blog">
         <div class="container anchor">
             <h3>Latest articles</h3>
             <div class="blog-wrapper d-flex jst-btwn">

@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'FifthMainSection',
+        name: 'SubAboutMainSection',
         data(){
             return{
                 cards:[

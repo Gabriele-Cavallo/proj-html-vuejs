@@ -13,7 +13,32 @@
         data (){
             return{
                 store,
-                headerLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Store'],
+                headerLinks: [
+                    {
+                        link: 'Home',
+                        section: 'home',
+                    },
+                    {
+                        link: 'Services',
+                        section: 'services',
+                    },
+                    {
+                        link: 'About',
+                        section: 'about',
+                    },
+                    {
+                        link: 'Videos',
+                        section: 'videos',
+                    },
+                    {
+                        link: 'Blog',
+                        section: 'blog',
+                    },
+                    {
+                        link: 'Store',
+                        section: 'store',
+                    },
+                ],
                 footerInfo:
                     {
                         socialLinks: [

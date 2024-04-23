@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'ThirdMainSection',
+        name: 'VideosMainSection',
         data(){
             return{
                 playlist: [
@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="videos">
         <div class="row">
         <div class="col-50 service">
             <div class="img-wrapper anchor">
@@ -126,6 +126,7 @@ section{
             }
         }
         &.advice{
+            padding-left: 40px;
             margin-top: 150px;
             *{
                 margin-bottom: 30px;

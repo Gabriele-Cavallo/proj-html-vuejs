@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'EighthMainSection',
+        name: 'SubStoreMainSection',
         data(){
             return{
                 services: [

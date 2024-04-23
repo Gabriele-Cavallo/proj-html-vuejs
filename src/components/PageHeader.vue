@@ -23,8 +23,8 @@
             <div class="header-menu-wrapper d-flex algn-cntr">
                 <!-- Links navigation -->
                 <ul class="nav-bar d-flex">
-                    <a v-for="link in headerLinks" href="#">
-                        <li>{{link}}</li>
+                    <a v-for="link in headerLinks" :href="`#${link.section}`">
+                        <li>{{link.link}}</li>
                     </a>
                 </ul>
                 <span class="badge">new</span>
@@ -51,6 +51,9 @@
     @use '../style/partials/variables' as *;
 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: $palette-black;
     height: 100px;
     .header-wrapper{
@@ -60,6 +63,7 @@ header{
             width: 220px;
         }
         .header-menu-wrapper{
+            max-width: 70%;
             .nav-bar a:hover{
                 color: $palette-white;
             }

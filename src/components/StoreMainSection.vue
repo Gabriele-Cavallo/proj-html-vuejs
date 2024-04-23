@@ -1,11 +1,11 @@
 <script>
     export default{
-        name: 'SeventhMainSection',
+        name: 'StoreMainSection',
     }
 </script>
 
 <template>
-    <section>
+    <section id="store">
         <div class="background-gradient-bottom d-flex jst-cntr algn-cntr">
             <div class="container">
                 <h2>"I've failed over and over again in my life. And that is why I succeed."</h2>

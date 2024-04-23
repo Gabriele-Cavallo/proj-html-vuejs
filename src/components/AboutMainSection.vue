@@ -1,11 +1,11 @@
 <script>
     export default{
-        name: 'FourthMainSection',
+        name: 'AboutMainSection',
     }
 </script>
 
 <template>
-    <section>
+    <section id="about">
         <div class="background-gradient d-flex algn-cntr">
             <div class="container">
                 <div class="col-60">
