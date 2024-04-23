@@ -53,16 +53,17 @@
 <style scoped lang="scss">
     @use '../style/partials/variables' as *;
 section{
-    padding: 80px 0;
+    padding: 150px 0;
     background-color: $palette-black;
     .container{
         .card-wrapper{
             .card{
-                width: calc((100% / 3) - 40px);
+                font-size: 20px;
+                width: calc((100% / 3) - 80px);
                 border: 3px solid #3240c1;
                 text-align: center;
                 color: $palette-white;
-                padding: 60px 30px;
+                padding: 100px 30px;
                 transition: all 1s ease;
                 border-radius: 10px;
                 h3{
@@ -88,13 +89,14 @@ section{
                 .button-wrapper{
                     gap: 15px;
                     button{
+                        font-size: 20px;
                         background: transparent;
                         border: none;
                         font-weight: bold;
                         color: $palette-white;
                     }
                     i{
-                        font-size: 10px;
+                        font-size: 16px;
                         font-weight: 900;
                     }
                 }

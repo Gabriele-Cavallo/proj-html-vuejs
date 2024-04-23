@@ -44,7 +44,7 @@
                     <i class="fa-solid fa-water"></i>
                     <p>{{ service.paragraph }}</p>
                     <button class="btn d-flex algn-cntr jst-cntr">
-                        {{ service.button }}
+                        <div>{{ service.button }}</div>
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -60,6 +60,10 @@ section{
     .container{
         .card-wrapper{
             .card{
+                font-size: 20px;
+                img{
+                    max-width: 200px;
+                }
                 text-align: center;
                 padding: 30px;
                 width: calc((100% / 4) - 20px);
@@ -73,12 +77,13 @@ section{
                     margin: 20px 0;
                 }
                 .btn{
+                    font-size: 20px;
                     background-color: transparent;
                     color: $palette-black;
                     gap: 10px;
-                    font-weight: 600;
+                    font-weight: 400;
                     .fa-chevron-right{
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                 }
             }

@@ -73,7 +73,6 @@ section{
                 flex-direction: column;
                 gap: 40px;
                 .fa-water{
-                font-size: 50px;
                 color: $palette-yellow;
                 }
                 h4{

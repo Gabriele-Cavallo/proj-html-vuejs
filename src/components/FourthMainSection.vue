@@ -13,7 +13,7 @@
                     <h2>Insider offers & flash sales in your inbox every week.</h2>
                     <i class="fa-solid fa-water"></i>
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Insert you email...">
+                        <input type="text" placeholder="Insert your email...">
                         <button class="btn">Subscribe</button>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore earum dolorum rem odio harum quidem doloribus facere, pariatur at aliquid incidunt minima? Sed commodi explicabo aperiam eaque repudiandae in.</p>
@@ -53,7 +53,7 @@ section{
             .input-wrapper{
                 input{
                     border-radius: 25px;
-                    padding: 15px 35px;
+                    padding: 15px;
                     border: none;
                     width: 400px;
                     margin-right: 20px;
