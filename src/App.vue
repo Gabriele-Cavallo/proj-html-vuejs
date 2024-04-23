@@ -13,7 +13,53 @@
         data (){
             return{
                 store,
-                headerLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Store']
+                headerLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Store'],
+                footerInfo:
+                    {
+                        socialLinks: [
+                            {
+                                social: 'fa-brands fa-facebook-f'
+                            },
+                            {
+                                social: 'fa-brands fa-twitter'
+                            },
+                            {
+                                social: 'fa-brands fa-youtube'
+                            },
+                            {
+                                social: 'fa-brands fa-instagram'
+                            },
+                            {
+                                social: 'fa-brands fa-linkedin-in'
+                            },
+                        ],
+                        posts: [
+                            {
+                                link: 'The best protein shake'
+                            },
+                            {
+                                link: 'Ultimate cardio workout'
+                            },
+                            {
+                                link: 'New juices available now'
+                            },
+                            {
+                                link: 'Tips to find training partner'
+                            },
+                            {
+                                link: '20 best healthy recipes'
+                            },
+                        ],
+                        contacts: [
+                            {
+                                address: '4746 Tipple Road Michigan 48449',
+                                mobile: '1.800.000.0000',
+                                email: 'info@your-company.com',
+                            }
+                        ],
+                    },
+                    
+                
             }
         },
     }
@@ -24,7 +70,7 @@
     <main>
     <PageMain></PageMain>
     </main>
-    <PageFooter></PageFooter>
+    <PageFooter :footerInfo="footerInfo"></PageFooter>
 </template>
 
 <style lang="scss">

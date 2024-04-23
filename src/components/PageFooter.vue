@@ -3,51 +3,12 @@
 
     export default{
         name: 'PageFooter',
-
+        props:{
+            footerInfo: Object,
+        },
         data(){
             return{
                 store,
-                socialLinks: [
-                    {
-                        social: 'fa-brands fa-facebook-f'
-                    },
-                    {
-                        social: 'fa-brands fa-twitter'
-                    },
-                    {
-                        social: 'fa-brands fa-youtube'
-                    },
-                    {
-                        social: 'fa-brands fa-instagram'
-                    },
-                    {
-                        social: 'fa-brands fa-linkedin-in'
-                    },
-                ],
-                posts: [
-                    {
-                        link: 'The best protein shake'
-                    },
-                    {
-                        link: 'Ultimate cardio workout'
-                    },
-                    {
-                        link: 'New juices available now'
-                    },
-                    {
-                        link: 'Tips to find training partner'
-                    },
-                    {
-                        link: '20 best healthy recipes'
-                    },
-                ],
-                contacts: [
-                    {
-                        address: '4746 Tipple Road Michigan 48449',
-                        mobile: '1.800.000.0000',
-                        email: 'info@your-company.com',
-                    }
-                ],
             }
         }
     }
@@ -61,13 +22,13 @@
                     <img class="footer-logo" src="../assets/img/logo-2x.png" alt="logo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, provident? Nemo dolore impedit nostrum animi soluta itaque at beatae, sequi molestiae cupiditate eaque fugit, corrupti minus id sint ipsa labore.</p>
                     <div class="social-wrapper">
-                        <i v-for="social in socialLinks" :class="social.social"></i>
+                        <i v-for="social in footerInfo.socialLinks" :class="social.social"></i>
                     </div>
                 </div>
                 <div class="col-33">
                     <h3>RECENT POST</h3>
                     <ul>
-                        <li v-for="post in posts">
+                        <li v-for="post in footerInfo.posts">
                             <a class="d-flex jst-cntr" href="#">
                                 <i class="fa-solid fa-chevron-right"></i>
                                 <div class="post">{{ post.link }}</div>
@@ -77,9 +38,9 @@
                 </div>
                 <div class="col-33">
                     <h3>CONTACT INFORMATION</h3>
-                    <div class="address">{{ contacts[0].address }}</div>
-                    <div class="mobile">{{ contacts[0].mobile }}</div>
-                    <div>{{ contacts[0].email }}</div>
+                    <div class="address">{{ footerInfo.contacts[0].address }}</div>
+                    <div class="mobile">{{ footerInfo.contacts[0].mobile }}</div>
+                    <div>{{ footerInfo.contacts[0].email }}</div>
                 </div>
             </div>
         </div>
@@ -109,6 +70,14 @@ footer{
                 margin-bottom: 40px;
                 width: calc(100% / 3);
                 text-align: center;
+                img, h3{
+                    height: 52px;
+                }
+                h3{
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
                 p{
                     margin: 40px 0;
                     line-height: 1.5;
