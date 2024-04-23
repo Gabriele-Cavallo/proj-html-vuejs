@@ -20,7 +20,7 @@
                     <i class="fa-solid fa-water"></i>
                     <small>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</small>
                     <div class="btn-wrapper">
-                        <button class="btn">
+                        <button class="btn hover-red">
                             <i class="fa-brands fa-youtube"></i>
                             <span>Visit my YouTubeChannel</span>
                         </button>
