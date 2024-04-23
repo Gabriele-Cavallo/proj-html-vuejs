@@ -48,7 +48,7 @@
             </div>
             <div class="sub-container">
                 <h2>"How you respond to the challenge in the second half will determine what you become after the game, wheter you are a wiiner or a loser."</h2>
-                <span>[wave]</span>
+                <i class="fa-solid fa-water"></i>
                 <div class="testimonials d-flex jst-cntr algn-cntr">
                     <img src="../assets/img/avatar-1-2x.jpg" alt="avatar">
                     <div>Brad Johgnson</div>
@@ -114,6 +114,10 @@ section{
             color: $palette-white;
             *{
                 margin-bottom: 15px;
+            }
+            i{
+                font-size: 50px;
+                color: $palette-yellow;
             }
             h2{
                 font-size: 40px;

@@ -17,7 +17,7 @@
                 <div class="left-col">
                     <h4>Certified fitness professional</h4>
                     <h2>Take control of your health</h2>
-                    <span>[wave]</span>
+                    <i class="fa-solid fa-water"></i>
                     <small>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</small>
                     <div class="btn-wrapper">
                         <button class="btn">
@@ -71,6 +71,10 @@ section{
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
+                .fa-water{
+                font-size: 50px;
+                color: $palette-yellow;
+                }
                 h4{
                     color: $palette-red;
                     font-size: 25px;

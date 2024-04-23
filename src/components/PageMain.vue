@@ -3,6 +3,7 @@
     import SecondMainSection from './SecondMainSection.vue';
     import ThirdMainSection from './ThirdMainSection.vue';
     import FourthMainSection from './FourthMainSection.vue';
+    import FifthMainSection from './FifthMainSection.vue';
 
     export default{
         name: 'PageMain',
@@ -11,6 +12,7 @@
             SecondMainSection,
             ThirdMainSection,
             FourthMainSection,
+            FifthMainSection,
         },
         data(){
             return{
@@ -25,6 +27,7 @@
     <SecondMainSection></SecondMainSection>
     <ThirdMainSection></ThirdMainSection>
     <FourthMainSection></FourthMainSection>
+    <FifthMainSection></FifthMainSection>
 </template>
 
 <style scoped lang="scss">

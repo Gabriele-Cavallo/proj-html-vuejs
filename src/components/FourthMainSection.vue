@@ -11,7 +11,7 @@
                 <div class="col-60">
                     <h4>Join our mailing list today</h4>
                     <h2>Insider offers & flash sales in your inbox every week.</h2>
-                    <div>[wave]</div>
+                    <i class="fa-solid fa-water"></i>
                     <div class="input-wrapper">
                         <input type="text" placeholder="Insert you email...">
                         <button class="btn">Subscribe</button>
@@ -37,6 +37,10 @@ section{
             width: 60%;
             *{
                 margin-bottom: 20px;
+            }
+            i{
+                color: $palette-yellow;
+                font-size: 50px;
             }
             h4{
                 color: $palette-red;
