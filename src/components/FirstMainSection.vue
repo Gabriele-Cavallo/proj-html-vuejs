@@ -88,6 +88,7 @@ section{
                     font-size: 16px;
                 }
                 .btn-wrapper button{
+                    margin-bottom: 15px;
                     margin-right: 10px;
                     &.btn *{
                         margin-right: 10px;
