@@ -45,10 +45,12 @@ section{
             }
             p{
                 margin: 30px;
+                font-size: 20px;
             }
             button{
+                font-size: 18px;
                 i{
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }

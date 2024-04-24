@@ -7,17 +7,14 @@
                     {
                         image: 'blog4-2x.jpg',
                         title: 'The best protein shake',
-                        subTitle: 'By admin | November 26th, 2019 | Gym',
                     },
                     {
                         image: 'blog1-2x.jpg',
                         title: 'Ultimate cardio workout',
-                        subTitle: 'By admin | November 26th, 2019 | Gym',
                     },
                     {
                         image: 'blog3-2x.jpg',
                         title: 'New juices available now',
-                        subTitle: 'By admin | November 26th, 2019 | Gym',
                     },
                 ]
             }
@@ -42,7 +39,12 @@
                         <img :src="getImageUrl(video.image)" alt="video playlist">
                     </div>
                     <h3>{{ video.title }}</h3>
-                    <small>{{ video.subTitle }}</small>
+                    <small class="d-flex algn-cntr small-link">
+                        By 
+                        <a href="#">admin</a> 
+                        | November 26th, 2019 | 
+                        <a href="#">Gym</a>
+                    </small>
                 </div>
                 <!-- /Single blog box template -->
                 <a class="d-flex algn-cntr" href="#">Read all articles
@@ -93,6 +95,13 @@ section{
                 small{
                     color: $palette-grey;
                     font-size: 18px;
+                    gap: 5px;
+                    &.small-link{
+                        a{
+                        position: relative;
+                        right: 0;
+                        }
+                    }
                 }
             }
         }

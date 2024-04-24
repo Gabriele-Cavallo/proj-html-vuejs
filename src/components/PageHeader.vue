@@ -32,7 +32,7 @@
 
                 <!-- Info + Shop + Find Menu -->
                 <div class="header-btn-wrapper d-flex algn-cntr">
-                    <button class="btn">Schedule a workout</button>
+                    <button class="btn header-btn">Schedule a workout</button>
                     <button class="btn-no-style">
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </button>
@@ -86,6 +86,9 @@ header{
             .header-btn-wrapper{
                 gap: 50px;
                 margin-left: 40px;
+                .header-btn{
+                    min-width: 203px;
+                }
                 .btn-no-style{
                     background-color: transparent;
                     border: none;
