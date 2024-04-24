@@ -37,7 +37,9 @@
             <div class="box-wrapper d-flex jst-btwn">
                 <!-- Single box template -->
                 <div v-for="service in services" class="box anchor d-flex pointer">
-                    <img :src="getImageUrl(service.image)" :alt="service.title">
+                    <div class="img-wrapper">
+                        <img :src="getImageUrl(service.image)" :alt="service.title">
+                    </div>
                     <div class="box-title">
                         <i class="fa-solid fa-water"></i>
                         <h3>{{  service.title  }}</h3>
@@ -85,18 +87,22 @@ section{
                &:hover{
                 transform: scale(1.1);
                }
-               &::after{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.4)20%, rgba(0, 0, 0, 0.1)100% );
-               }
-               img{
-                height: 100%;
-                width: 100%;
+               .img-wrapper{
+                    height: 100%;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.4)20%, rgba(0, 0, 0, 0.1)100% );
+                    }
                }
                .box-title{
                 position: absolute;
@@ -108,15 +114,10 @@ section{
                     }
                     h3{
                         font-size: 30px;
-                        text-shadow: 1px 1px 2px black;
                     }
                     h4{
                         font-size: 25px;
                         color: $palette-yellow;
-                        text-shadow: 1px 1px 2px black;
-                    }
-                    i{
-                        text-shadow: 1px 1px 2px black;
                     }
                 }
             }
