@@ -119,6 +119,7 @@ section{
                 border-bottom-right-radius: 35px;
                 overflow: hidden;
                 .img-wrapper-gradient{
+                    height: 100%;
                     &::after{
                         content: '';
                         position: absolute;

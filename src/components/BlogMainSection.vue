@@ -39,12 +39,16 @@
                         <img :src="getImageUrl(video.image)" alt="video playlist">
                     </div>
                     <h3>{{ video.title }}</h3>
-                    <small class="d-flex algn-cntr small-link">
-                        By 
-                        <a href="#">admin</a> 
-                        | November 26th, 2019 | 
-                        <a href="#">Gym</a>
-                    </small>
+                    <div class="d-flex algn-cntr d-wrap gap-5">
+                        <small class="d-flex algn-cntr small-link">
+                            By 
+                            <a href="#">admin</a> 
+                        </small>
+                        <small class="d-flex algn-cntr small-link">    
+                            | November 26th, 2019 | 
+                            <a href="#">Gym</a>
+                        </small>
+                    </div>
                 </div>
                 <!-- /Single blog box template -->
                 <a class="d-flex algn-cntr" href="#">Read all articles
@@ -100,6 +104,7 @@ section{
                         a{
                         position: relative;
                         right: 0;
+                        font-size: 16px;
                         }
                     }
                 }

@@ -36,14 +36,14 @@
         <div class="container">
             <div class="card-wrapper d-flex jst-btwn">
                 <!-- Single card template -->
-                <div v-for="card in cards" class="card anchor">
+                <div v-for="card in cards" class="card anchor pointer">
                     <i :class="card.icon"></i>
                     <h3>{{ card.title }}</h3>
                     <h4>{{ card.subTitle }}</h4>
                     <p>{{ card.paragraph }}</p>
                     <div class="button-wrapper">
                         <a href="#" class="d-flex algn-cntr jst-cntr">
-                            <button class="pointer">{{ card.button }}</button>
+                            <button>{{ card.button }}</button>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
