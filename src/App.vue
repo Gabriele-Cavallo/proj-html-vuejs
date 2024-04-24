@@ -17,26 +17,32 @@
                     {
                         link: 'Home',
                         section: 'home',
+                        badge: '',
                     },
                     {
                         link: 'Services',
                         section: 'services',
+                        badge: '',
                     },
                     {
                         link: 'About',
                         section: 'about',
+                        badge: '',
                     },
                     {
                         link: 'Videos',
                         section: 'videos',
+                        badge: '',
                     },
                     {
                         link: 'Blog',
                         section: 'blog',
+                        badge: '',
                     },
                     {
                         link: 'Store',
                         section: 'store',
+                        badge: 'new',
                     },
                 ],
                 footerInfo:

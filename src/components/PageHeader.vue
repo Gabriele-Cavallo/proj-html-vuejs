@@ -23,11 +23,11 @@
             <div class="header-menu-wrapper d-flex algn-cntr">
                 <!-- Links navigation -->
                 <ul class="nav-bar d-flex">
-                    <a v-for="link in headerLinks" :href="`#${link.section}`">
+                    <a class="d-flex algn-cntr" v-for="link in headerLinks" :href="`#${link.section}`">
                         <li>{{link.link}}</li>
+                        <span v-if="link.badge != ''" class="badge">{{ link.badge }}</span>
                     </a>
                 </ul>
-                <span class="badge">new</span>
                 <!-- /Links navigation -->
 
                 <!-- Info + Shop + Find Menu -->
