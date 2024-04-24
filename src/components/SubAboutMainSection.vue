@@ -36,7 +36,7 @@
         <div class="container">
             <div class="card-wrapper d-flex jst-btwn">
                 <!-- Single card template -->
-                <div v-for="card in cards" class="card">
+                <div v-for="card in cards" class="card anchor">
                     <i :class="card.icon"></i>
                     <h3>{{ card.title }}</h3>
                     <h4>{{ card.subTitle }}</h4>
@@ -64,12 +64,9 @@ section{
             .card{
                 font-size: 20px;
                 width: calc((100% / 3) - 40px);
-                border: 3px solid #3240c1;
                 text-align: center;
                 color: $palette-white;
                 padding: 100px 40px;
-                transition: all 1s ease;
-                border-radius: 10px;
                 h3{
                     margin-top: 40px;
                     margin-bottom: 10px;
@@ -85,7 +82,6 @@ section{
                 }
                 i{
                     font-size: 50px;
-
                     &.fa-dumbbell{
                         transform: rotate(-45deg);
                     }
@@ -107,8 +103,21 @@ section{
                         }
                     }
                 }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: 3px solid #3240c1;
+                    border-radius: 10px;
+                    transition: all 0.5s ease;
+                }
                 &:hover{
-                    transform: scale(1.1);
+                    &::after{
+                        transform: scale(1.05);
+                    }
                 }
             }
         }
