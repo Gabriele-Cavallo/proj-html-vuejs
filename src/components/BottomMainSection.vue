@@ -32,7 +32,7 @@ section{
     background-blend-mode: multiply;
     background-repeat: repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     min-height: 900px;
     .container{
         min-height: 900px;

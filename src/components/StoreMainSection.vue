@@ -26,6 +26,7 @@
 
 section{
     background-image: url('../assets/img/banner2-2x.jpg');
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 900px;

@@ -31,7 +31,7 @@ section{
     background-image: url('../assets/img/banner1-2x.jpg');
     min-height: 1000px;
     background-size: cover;
-    background-position: right;
+    background-position: right top;
     background-repeat: no-repeat;
     .background-gradient{
         min-height: 1000px;
