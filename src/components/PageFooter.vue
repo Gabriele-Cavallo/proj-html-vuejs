@@ -10,7 +10,12 @@
             return{
                 store,
             }
-        }
+        },
+        methods: {
+            getImageUrl(name) {
+                return new URL(`${name}`, import.meta.url).href;
+            }
+        },
     }
 </script>
 
@@ -20,18 +25,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-33">
-                    <img class="footer-logo" src="../assets/img/logo-2x.png" alt="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, provident? Nemo dolore impedit nostrum animi soluta itaque at beatae, sequi molestiae cupiditate eaque fugit, corrupti minus id sint ipsa labore.</p>
+                    <img class="footer-logo" :src="getImageUrl(footerInfo.leftCol[0].logo)" alt="logo">
+                    <p>{{ footerInfo.leftCol[0].paragraph }}</p>
                     <div class="social-wrapper">
-                        <a  v-for="social in footerInfo.socialLinks" href="#">
+                        <a  v-for="social in footerInfo.leftCol[0].socialLinks" href="#">
                             <i :class="social.social"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-33">
-                    <h3>RECENT POST</h3>
+                    <h3>{{ footerInfo.midCol[0].title}}</h3>
                     <ul>
-                        <li v-for="post in footerInfo.posts">
+                        <li v-for="post in footerInfo.midCol[0].posts">
                             <a class="d-flex jst-cntr" href="#">
                                 <i class="fa-solid fa-chevron-right"></i>
                                 <div class="post">{{ post.link }}</div>
@@ -40,10 +45,10 @@
                     </ul>
                 </div>
                 <div class="col-33">
-                    <h3>CONTACT INFORMATION</h3>
-                    <div class="address">{{ footerInfo.contacts[0].address }}</div>
-                    <div class="mobile">{{ footerInfo.contacts[0].mobile }}</div>
-                    <div>{{ footerInfo.contacts[0].email }}</div>
+                    <h3>{{ footerInfo.rightCol[0].title }}</h3>
+                    <div class="address">{{ footerInfo.rightCol[0].contacts[0].address }}</div>
+                    <div class="mobile">{{ footerInfo.rightCol[0].contacts[0].mobile }}</div>
+                    <div>{{ footerInfo.rightCol[0].contacts[0].email }}</div>
                 </div>
             </div>
         </div>
@@ -52,7 +57,7 @@
         <!-- Footer copyright -->
         <div class="footer-container">
             <div class="copyright d-flex jst-cntr algn-cntr">
-                <i></i>
+                <i class="fa-regular fa-copyright"></i>
                 <div>Copyright 2012 - 2020 | Avada theme by</div>
                 <a href="#">Theme Fusion</a>
                 <div> | All rights reserved | Powered by </div>
@@ -128,6 +133,9 @@ footer{
             color: $palette-grey;
             a{
                 color: $palette-white;
+            }
+            i{
+                font-size: 14px;
             }
         }
     }
